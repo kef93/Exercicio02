@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Exercicio02</string>
+    <string-array name="estado_civil">
+        <item>Solteiro</item>
+        <item>Casado</item>
+        <item>Separado</item>
+        <item>Divorciado</item>
+    </string-array>
+</resources>

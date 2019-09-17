@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sua data de nascimento"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="seu email"
+            android:inputType="textEmailAddress" />
+
+        <SeekBar
+            android:id="@+id/seekRenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="20000"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/txvValorRenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radgp"
+            android:layout_width="100dp"
+            android:layout_height="50dp">
+
+            <RadioButton
+                android:id="@+id/radbtnMasc"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:text="Masculino"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radbtnFem"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:text="Feminino" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spnEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnConfere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFERÊNCIA" />
+
+        <Button
+            android:id="@+id/btnConfirma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMA" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
