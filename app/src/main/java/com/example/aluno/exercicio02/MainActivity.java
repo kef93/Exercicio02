@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //fabio tanso
+
         final EditText nome = (EditText) findViewById(R.id.txtNome);
         final EditText date = (EditText) findViewById(R.id.txtData);
         final EditText email = (EditText) findViewById(R.id.txtEmail);
