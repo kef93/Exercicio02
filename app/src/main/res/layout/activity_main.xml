@@ -18,7 +18,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Digite seu nome"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            />
 
         <EditText
             android:id="@+id/txtData"
@@ -26,7 +28,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Sua data de nascimento"
-            android:inputType="date" />
+            android:inputType="date"
+            android:layout_marginTop="5dp"
+            />
 
         <EditText
             android:id="@+id/txtEmail"
@@ -34,14 +38,28 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="seu email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/txtCelular"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="telefone"
+            android:inputType="phone"
+            android:layout_marginTop="5dp"
+            />
 
         <SeekBar
             android:id="@+id/seekRenda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:max="20000"
-            android:progress="50" />
+            android:progress="50"
+            android:layout_marginTop="5dp"
+            />
 
         <TextView
             android:id="@+id/txvValorRenda"
@@ -59,31 +77,52 @@
                 android:layout_height="5dp"
                 android:layout_weight="1"
                 android:text="Masculino"
-                android:visibility="visible" />
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                />
 
             <RadioButton
                 android:id="@+id/radbtnFem"
                 android:layout_width="100dp"
                 android:layout_height="5dp"
                 android:layout_weight="1"
-                android:text="Feminino" />
+                android:text="Feminino"
+                android:layout_marginTop="5dp"
+                />
+
         </RadioGroup>
 
         <Spinner
             android:id="@+id/spnEstado"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
 
-        <Button
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            >
+
+            <Button
             android:id="@+id/btnConfere"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="CONFERÊNCIA" />
+            android:text="CONFERÊNCIA"
+            android:layout_marginTop="5dp"
+            />
 
-        <Button
-            android:id="@+id/btnConfirma"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CONFIRMA" />
+            <Button
+                android:id="@+id/btnIncluir"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="INCLUIR"
+                />
+
+        </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -28,23 +28,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //fabio tanso
 
         final EditText nome = (EditText) findViewById(R.id.txtNome);
         final EditText date = (EditText) findViewById(R.id.txtData);
         final EditText email = (EditText) findViewById(R.id.txtEmail);
+        final EditText celular = (EditText) findViewById(R.id.txtCelular);
         final SeekBar seekrenda = (SeekBar) findViewById(R.id.seekRenda);
         final Spinner estadocivil = (Spinner) findViewById(R.id.spnEstado);
         final RadioButton radbtnmasc = (RadioButton) findViewById(R.id.radbtnMasc);
         final RadioButton radbtnfem = (RadioButton) findViewById(R.id.radbtnFem);
         mostrarenda = (TextView) findViewById(R.id.txvValorRenda);
         Button btnConfere = (Button) findViewById(R.id.btnConfere);
-        Button btnConfirma = (Button) findViewById(R.id.btnConfirma);
+        Button btnIncluir = (Button) findViewById(R.id.btnIncluir);
 
 
 
 
-         //Criando a barra de renda pulando de 50 em 50 até 20K
+        //Criando a barra de renda pulando de 50 em 50 até 20K
         SeekBar.OnSeekBarChangeListener renda = new SeekBar.OnSeekBarChangeListener() {
             //método para quando o Usuário muda a barra de lugar
             @Override
@@ -54,12 +54,10 @@ public class MainActivity extends AppCompatActivity {
             //método para quando o Usuário clica na barra
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
             //método para quando o Usuário solta a barra
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
             }
         };
         seekrenda.setOnSeekBarChangeListener(renda);
@@ -80,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                         "Nome: " + nome.getText().toString()
                                 +"\nNascimento: " + date.getText().toString()
                                 +"\nEmail: " + email.getText().toString()
+                                +"\nCelular: " + celular.getText().toString()
                                 +"\nRenda: R$" + seekrenda.getProgress()
                                 +"\nEstado Civil: " +  estadocivil.getSelectedItem().toString()
                                 +"\nSexo: " + sexo
@@ -95,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         estadocivil.setAdapter(adapter);
 
         //Criado botão Confirma
-        btnConfirma.setOnClickListener(new View.OnClickListener() {
+        btnIncluir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Criando intent no botão Confirma
@@ -106,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("nome", nome.getText().toString());
                 bundle.putString("date", date.getText().toString());
                 bundle.putString("email", email.getText().toString());
+                bundle.putString("celular", celular.getText().toString());
                 bundle.putString("renda", Integer.toString(seekrenda.getProgress()));
                 bundle.putString("estadocivil", estadocivil.getSelectedItem().toString());
                 bundle.putString("sexo", sexo);

@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfirmaActivity">
+    tools:context=".IncluirActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        >
 
         <TextView
             android:id="@+id/txvNome"
@@ -32,7 +33,19 @@
             android:text="TextView" />
 
         <TextView
+            android:id="@+id/txvCelular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
             android:id="@+id/txvRenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txvSexo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />
@@ -43,11 +56,12 @@
             android:layout_height="wrap_content"
             android:text="TextView" />
 
-        <TextView
-            android:id="@+id/txvSexo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+        <Button
+            android:id="@+id/btnConfirma"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:onClick="onClickConfirma"
+            android:text="Confirmar" />
 
     </LinearLayout>
 
