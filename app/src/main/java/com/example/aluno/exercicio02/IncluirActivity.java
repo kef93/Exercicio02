@@ -41,9 +41,7 @@ public class IncluirActivity extends AppCompatActivity {
         txvEstadocivil.setText("Estado Civil: "+ bundle.getString("estadocivil"));
         txvSexo.setText("Sexo: "+ bundle.getString("sexo"));
 
-        public void onClickIncluir(View v){
-            startActivityForResult(new Intent(this, ClienteActivity.class), 1);
-        }
+         }
 
     }
 }

@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Criando intent no botão Confirma
-                Intent intent = new Intent(MainActivity.this, ConfirmaActivity.class);
+                Intent intent = new Intent(MainActivity.this, IncluirActivity.class);
                 //Criando Bundle para agrupar todas as variáveis no botão Confirma
                 Bundle bundle = new Bundle();
 
